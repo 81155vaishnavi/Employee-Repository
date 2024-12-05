@@ -1,10 +1,10 @@
-package com.iptech.EmployeeDetails;
+package com.iptech.configServer;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class EmployeeDetailsApplicationTests {
+class ConfigServerApplicationTests {
 
 	@Test
 	void contextLoads() {

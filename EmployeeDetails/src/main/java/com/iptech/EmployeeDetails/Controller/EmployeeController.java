@@ -34,7 +34,7 @@ public class EmployeeController {
 	public ResponseEntity<String> deleteData(@PathVariable int eid)
 	{
 		esi.deleteEmployee(eid);
-		return new ResponseEntity<String>("delete data",HttpStatus.CREATED);
+		return new ResponseEntity<String>("delete data.....",HttpStatus.CREATED);
 	}
 	
 	@PutMapping("/edit/{eid}")
@@ -47,10 +47,8 @@ public class EmployeeController {
 	@GetMapping("/getEmployee/{eusername}")
 	public ResponseEntity<Employee> getEmployee(@PathVariable String eusername)
 	{
-
 	  Employee emp=   esi.getEmployee(eusername);
       return new ResponseEntity<Employee>(emp,HttpStatus.OK);
-
 	}
 
 	@GetMapping("/getEmployeee/{eusername}/{epassword}")
